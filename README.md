@@ -11,21 +11,21 @@ demo
 
 --- 
 
-<figure >
-    <img src="demo/1.jpg" width="100">
-    <img src="demo/2.jpg" width="100">
-    <img src="demo/3.jpg" width="100">
-    <img src="demo/4.jpg" width="100 ">
+<figure align= "center" >
+    <img align="left" src="demo/1.jpg" width="180">
+    <img align="left" src="demo/2.jpg" width="180">
+    <img align="left" src="demo/3.jpg" width="180">
+    <img align="left" src="demo/4.jpg" width="180 ">
 </figure>
-<figure >
-    <img src="demo/5.jpg" width="180">
-    <img src="demo/6.jpg" width="180">
-    <img src="demo/7.jpg" width="180">
-    <img src="demo/8.jpg" width="180">
+<figure  align="center">
+    <img  align="left" src="demo/5.jpg" width="180">
+    <img  align="left" src="demo/6.jpg" width="180">
+    <img  align="left" src="demo/7.jpg" width="180">
+    <img  align="left" src="demo/8.jpg" width="180">
 
 </figure>
-<figure >
-    <img src="demo/9.jpg" width="300">
-    <img src="demo/10.jpg" width="300">
+<figure align = "center">
+    <img align="left" src="demo/9.jpg" width="180">
+    <img align="left" src="demo/10.jpg" width="180">
 </figure>
 
