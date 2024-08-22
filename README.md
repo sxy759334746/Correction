@@ -12,10 +12,10 @@ demo
 --- 
 
 <figure >
-    <img src="demo/1.jpg" width="180">
-    <img src="demo/2.jpg" width="180">
-    <img src="demo/3.jpg" width="180">
-    <img src="demo/4.jpg" width="180 ">
+    <img src="demo/1.jpg" width="100">
+    <img src="demo/2.jpg" width="100">
+    <img src="demo/3.jpg" width="100">
+    <img src="demo/4.jpg" width="100 ">
 </figure>
 <figure >
     <img src="demo/5.jpg" width="180">
