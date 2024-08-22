@@ -5,27 +5,18 @@
 ---
 
 git history
+
 ![git history](demo/181407.png)
 
 demo
 
 --- 
+<img src="demo/1.jpg" width="200"> | <img src="demo/2.jpg" width="200"> | <img src="demo/3.jpg" width="200"> | <img src="demo/4.jpg" width="200">
 
-<figure align= "center" >
-    <img align="left" src="demo/1.jpg" width="180">
-    <img align="left" src="demo/2.jpg" width="180">
-    <img align="left" src="demo/3.jpg" width="180">
-    <img align="left" src="demo/4.jpg" width="180 ">
-</figure>
-<figure  align="center">
-    <img  align="left" src="demo/5.jpg" width="180">
-    <img  align="left" src="demo/6.jpg" width="180">
-    <img  align="left" src="demo/7.jpg" width="180">
-    <img  align="left" src="demo/8.jpg" width="180">
+---
 
-</figure>
-<figure align = "center">
-    <img align="left" src="demo/9.jpg" width="180">
-    <img align="left" src="demo/10.jpg" width="180">
-</figure>
+<img src="demo/1.jpg" width="200"> | <img src="demo/2.jpg" width="200"> | <img src="demo/3.jpg" width="200"> | <img src="demo/4.jpg" width="200">
 
+---
+
+<img  src="demo/9.jpg" width="300"> | <img  src="demo/10.jpg" width="300">
