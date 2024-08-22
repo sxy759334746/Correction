@@ -1,3 +1,4 @@
 /build
 /SavePDF/*
-/src/main/java/com.luckyxmobile.correction/util
+util/
+

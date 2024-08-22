@@ -14,7 +14,7 @@ bin/
 gen/
 out/
 
-/app/src/main/java/com.luckyxmobile.correction/util
+app/src/main/java/com.luckyxmobile.correction/util
 
 
 # Gradle files
