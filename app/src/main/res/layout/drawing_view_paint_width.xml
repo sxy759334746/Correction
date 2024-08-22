@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/paint_width_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:scrollbars="none"
+    android:gravity="center|start"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="8dp"
+            android:text="@string/initial_width"
+            android:textColor="@color/gray_9c"
+            android:textSize="@dimen/print_button_text_size"/>
+
+        <Button
+            android:id="@+id/doodle_paint_initial_width"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/red_ff"
+            android:text="init"
+            android:textSize="@dimen/print_button_text_size"
+            android:background="@drawable/ic_paint_width_check_24dp"/>
+
+        <Button
+            android:id="@+id/doodle_paint_width_thin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/gray_9c"
+            android:text="40"
+            android:textSize="@dimen/print_button_text_size"
+            android:background="@drawable/ic_paint_width_uncheck_24dp"/>
+
+        <Button
+            android:id="@+id/doodle_paint_width_medium"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/gray_9c"
+            android:text="60"
+            android:textSize="@dimen/print_button_text_size"
+            android:background="@drawable/ic_paint_width_uncheck_24dp"/>
+
+
+        <Button
+            android:id="@+id/doodle_paint_width_thick"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/gray_9c"
+            android:text="80"
+            android:textSize="@dimen/print_button_text_size"
+            android:background="@drawable/ic_paint_width_uncheck_24dp"/>
+
+    </LinearLayout>
+
+
+</HorizontalScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.luckyxmobile.correction.ui.activity.PaperDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/review_paper_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Theme.ToolBar.Menu"
+            app:title="title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/review_paper_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black_f5" />
+    </LinearLayout>
+    <!--<ListView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:id="@+id/review_paper_listview"-->
+    <!--&gt;</ListView>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/review_paper_regroup_btn"-->
+        <!--style="@style/Widget.MaterialComponents.Button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|center"-->
+        <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+        <!--android:layout_marginBottom="@dimen/activity_vertical_margin"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:shadowRadius="5"-->
+        <!--android:text="@string/regroup_paper"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/review_paper_text_size"-->
+        <!--/>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

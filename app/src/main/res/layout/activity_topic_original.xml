@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--题干标题-->
+    <LinearLayout
+        android:id="@+id/region_original"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/title_original"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/stem"
+            android:textSize="@dimen/text_body_size"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_original"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_add_orange_24dp"
+            android:background="@color/transparent"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <!--题干图片-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_topic_original"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--题干文字-->
+    <TextView
+        android:id="@+id/topic_original_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:paddingStart="16dp"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/topic_paper_text_size"
+        android:visibility="gone"
+        tools:ignore="RtlSymmetry" />
+
+</LinearLayout>

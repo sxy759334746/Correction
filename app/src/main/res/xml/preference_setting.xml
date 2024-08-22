@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:key="set"
+    android:title="@string/main_set">
+
+    <PreferenceScreen
+        android:key="set_tag_pre"
+        android:title="@string/set_tag"
+        app:iconSpaceReserved="false"/>
+
+    <CheckBoxPreference
+        android:key="view_pager_full_screen"
+        android:title="@string/view_topics_full_screen"
+        app:iconSpaceReserved="false"/>
+
+    <CheckBoxPreference
+        android:key="view_pager_show_tag"
+        android:title="@string/view_topics_display_tags"
+        app:iconSpaceReserved="false"/>
+
+    <PreferenceCategory
+        android:title="@string/smear"
+        app:iconSpaceReserved="false">
+
+        <MultiSelectListPreference
+            android:key="view_smear_by"
+            android:title="@string/view_smear_method"
+            android:entries="@array/view_smear_method"
+            android:entryValues="@array/view_smear_method"
+            android:summary="@string/click_smear_by"
+            app:iconSpaceReserved="false"/>
+
+        <MultiSelectListPreference
+            android:key="show_smear_pre"
+            android:title="@string/show_overlay"
+            android:entries="@array/show_print"
+            android:entryValues="@array/show_print"
+            android:summary="x,x,x"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/print"
+        app:iconSpaceReserved="false">
+
+        <MultiSelectListPreference
+            android:key="print_paper_pre"
+            android:title="@string/print_content"
+            android:entries="@array/print_page"
+            android:entryValues="@array/print_page"
+            android:summary="@string/stem"
+            app:iconSpaceReserved="false"/>
+
+        <CheckBoxPreference
+            android:key="print_page_show_smear"
+            android:title="@string/print_smear_content"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/about"
+        app:iconSpaceReserved="false">
+
+        <PreferenceScreen
+            android:key="version_pre"
+            android:summary="x.x.x"
+            android:title="@string/version"
+            app:iconSpaceReserved="false"/>
+
+  </PreferenceCategory>
+
+</PreferenceScreen>

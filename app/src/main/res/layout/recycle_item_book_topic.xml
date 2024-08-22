@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_collection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="8dp"
+    app:layout_constraintCircleRadius="2dp"
+    android:stateListAnimator="@drawable/card_touch_animation"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:orientation="vertical"
+    android:touchscreenBlocksFocus="true"    >
+
+    <!--app:cardCornerRadius 设置CardView边角度数
+        app:cardElevation 设置阴影高度
+        android:foreground="?attr/selectableItemBackground" 点击时显示波纹效果
+        android:stateListAnimator CardView点击阴影加深的效果-->
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/topic_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:gravity="center|end"
+                android:text="2019年12月23日"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:id="@+id/image_correction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minHeight="100dp"
+                android:maxHeight="250dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_margin="1dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="4dp">
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/tags_showed_on_book"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <com.like.LikeButton
+                    android:id="@+id/likebutton_correction"
+                    app:icon_type="heart"
+                    app:icon_size="@dimen/tiny_icon_size"
+                    app:is_enabled="false"
+                    app:circle_start_color="@color/colorPrimary"
+                    app:dots_primary_color="@color/colorAccent"
+                    app:dots_secondary_color="@color/colorPrimary"
+                    app:circle_end_color="@color/colorAccent"
+                    app:anim_scale_factor="2"
+                    android:layout_gravity="end"
+                    android:layout_width="@dimen/common_icon_width"
+                    android:layout_height="@dimen/common_icon_height"
+                    app:like_drawable="@drawable/ic_favorite_black_24dp"
+                    app:unlike_drawable="@drawable/ic_favorite_border_black_24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|start"
+            android:src="@drawable/item_uncheck"
+            android:visibility="gone"
+            android:layout_margin="8dp"
+            android:id="@+id/item_Checked"/>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
+

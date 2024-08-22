@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="correction"/>
+
+    <version value="4"/>
+
+    <list>
+        <mapping class="com.luckyxmobile.correction.bean.Book" />
+
+        <mapping class="com.luckyxmobile.correction.bean.Topic" />
+
+        <mapping class="com.luckyxmobile.correction.bean.Paper" />
+
+        <mapping class="com.luckyxmobile.correction.bean.Paper_Topic" />
+
+        <mapping class="com.luckyxmobile.correction.bean.Tag" />
+
+    </list>
+
+</litepal>

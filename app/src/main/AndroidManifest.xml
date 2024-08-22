@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luckyxmobile.correction">
+    <!-- sd卡写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- sd卡读权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_white"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_white"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.SettingsActivity"
+            android:label="@string/main_set" />
+        <activity android:name=".ui.activity.PaperActivity" />
+        <activity android:name=".ui.activity.TopicViewPageActivity" />
+        <activity
+            android:name=".ui.activity.EditPhotoActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="fullSensor" />
+        <activity android:name=".ui.activity.TagActivity" />
+        <activity android:name=".ui.activity.BookDetailActivity" />
+        <activity android:name=".ui.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SelectTopicActivity" />
+        <activity android:name=".ui.activity.SelectPaperActivity" />
+        <activity android:name=".ui.activity.PaperDetailActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.luckyxmobile.correction.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/public_file_path" />
+        </provider>
+
+        <activity android:name=".ui.activity.TopicActivity" />
+        <activity android:name=".ui.activity.SearchActivity" />
+        <activity android:name=".ui.activity.CropActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SetTagActivity" />
+    </application>
+
+</manifest>

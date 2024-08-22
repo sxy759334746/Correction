@@ -1,0 +1,129 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Correction</string>
+    <string name="review_page">Review Page</string>
+    <string name="correction_book">Correction Book</string>
+    <string name="add_correction_book">Add A Correction Book</string>
+    <string name="correction_name_hint">Please input book name</string>
+    <string name="add_review_page">"\u3000"Creating a Review Paper"\u3000"</string>
+    <string name="paper_select">Select Paper</string>
+    <string name="regroup_paper">Reassign</string>
+    <string name="select_wrong">Select Wrong</string>
+    <string name="save_data_when_quit">Save changes or no?</string>
+    <string name="confirm_delete_paper">Make sure to delete the page?\n
+        This action will not delete all the topics on it!</string>
+
+    <string name="stem">Stem</string>
+    <string name="right_solution">Right</string>
+    <string name="error_solution">Error</string>
+    <string name="point">Point</string>
+    <string name="error_reason">Reason</string>
+    <string name="topic_detail">Topic Details</string>
+    <string name="add_picture_camera">Add Picture(camera)</string>
+    <string name="add_picture_album">Add Picture(album)</string>
+    <string name="add_word">Add Word</string>
+
+    <string name="confirm_delete">Confirm the deletion</string>
+    <string name="ensure">Ensure</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Yes</string>
+    <string name="unsave">No</string>
+    <string name="next_step">Next</string>
+    <string name="last_step">Return</string>
+    <string name="finish">finish</string>
+    <string name="create">Create</string>
+    <string name="edit">Edit</string>
+    <string name="search">search</string>
+    <string name="filter">Filter</string>
+    <string name="favorite">Favorite</string>
+    <string name="collect">collect</string>
+    <string name="collect_cancel">cancel collection</string>
+    <string name="print">Print</string>
+    <string name="share">Share</string>
+    <string name="print_preview">Print preview</string>
+    <string name="print_content">Select Print Content</string>
+
+    <string name="tag">Tag</string>
+    <string name="more_tag">More Tag</string>
+    <string name="set_tag">Set Tag</string>
+    <string name="delete_tag">Delete Tag</string>
+    <string name="confirm_delete_tag">Make sure to delete the tag?</string>
+    <string name="input_tag">Please input a tag</string>
+    <string name="all_tag">All tags</string>
+    <string name="repeated_tag">Label names can not be repeated</string>
+
+    <string name="choose_from_camera">Choose From Camera</string>
+    <string name="choose_from_album">Choose From Album</string>
+
+    <string name="date_pattern">MM/dd/yyyy</string>
+    <string name="change_book_info">change the information</string>
+    <string name="delete_book">Make sure to delete the correction book and its topics?</string>
+    <string name="empty">empty</string>
+    <string name="select_book">select a correction book</string>
+    <string name="successful">successful</string>
+    <string name="permission_fail">Permission grant failed!</string>
+    <string name="comprehensive">comprehensive</string>
+    <string name="enter_keyword">Enter the query keyword</string>
+    <string name="loading">Loading....</string>
+    <string name="newest_order">oldest first</string>
+    <string name="oldest_order">newest first</string>
+    <string name="confirm_delete_topic">Make sure to delete?</string>
+    <string name="wrong_book">Book Name</string>
+    <string name="empty_input">Input cannot be empty</string>
+    <string name="paper_empty_cant_print">Review Paper is empty, unable to be printed</string>
+    <string name="paper_empty_cant_share">Review Paper is empty, unable to be shared</string>
+    <string name="rotate">rotate</string>
+    <string name="delete">delete</string>
+    <string name="rename">rename</string>
+    <string name="erase">Erase</string>
+    <string name="width">Width</string>
+    <string name="smear">Smear</string>
+    <string name="smear_waring">The smear area is too small or out of range!</string>
+    <string name="error_crop">Cannot crop correctly!</string>
+    <string name="warning_picture">Keep at least one picture!</string>
+    <string name="show_original_images">Original images</string>
+    <string name="random">Please enter the number of randomly selected</string>
+    <string name="wrong_input">Wrong Input</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="contrast_ratio">Contrast</string>
+    <string name="weak">weak</string>
+    <string name="common">common</string>
+    <string name="strong">strong</string>
+    <string name="details">Details</string>
+    <string name="display_all">Show all</string>
+    <string name="main_set">Set</string>
+    <string name="recent_topic">Recentness</string>
+    <string name="exit">Exit</string>
+    <string name="reset">reset</string>
+    <string name="version">Version</string>
+    <string name="white_out">White-Out</string>
+    <string name="tag_num_warn">Maximum number of tags</string>
+    <string name="initial_width">Initial width : </string>
+<!--    <string name="title_activity_settings">Settings</string>-->
+
+<!--    &lt;!&ndash; Preference Titles &ndash;&gt;-->
+<!--    <string name="messages_header">Messages</string>-->
+<!--    <string name="sync_header">Sync</string>-->
+
+<!--    &lt;!&ndash; Messages Preferences &ndash;&gt;-->
+<!--    <string name="signature_title">Your signature</string>-->
+<!--    <string name="reply_title">Default reply action</string>-->
+
+<!--    &lt;!&ndash; Sync Preferences &ndash;&gt;-->
+<!--    <string name="sync_title">Sync email periodically</string>-->
+<!--    <string name="attachment_title">Download incoming attachments</string>-->
+<!--    <string name="attachment_summary_on">Automatically download attachments for incoming emails-->
+<!--    </string>-->
+<!--    <string name="attachment_summary_off">Only download attachments when manually requested</string>-->
+<!--    <string name="title_activity_settings2">Settings2</string>-->
+    <string name="show_overlay">Show overlay</string>
+    <string name="view_topics_full_screen">View topics in full screen</string>
+    <string name="view_topics_display_tags">View topics display Tags</string>
+    <string name="about">about</string>
+    <string name="select_at_least_one">Select at least one !</string>
+    <string name="do_not_show">Do not show</string>
+    <string name="view_smear_method">View smear content method</string>
+    <string name="click_smear_by">Smear by clicking</string>
+    <string name="click_button_by">Button by clicking</string>
+    <string name="print_smear_content">Print smear overlay content</string>
+</resources>

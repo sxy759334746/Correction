@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.TopicViewPageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.like.LikeButton
+            android:id="@+id/store_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            app:anim_scale_factor="2"
+            app:circle_end_color="@color/colorAccent"
+            app:dots_primary_color="@color/colorAccent"
+            app:icon_size="@dimen/common_icon_size"
+            app:icon_type="heart"
+            app:is_enabled="true"
+            app:like_drawable="@drawable/ic_favorite_black_24dp"
+            app:unlike_drawable="@drawable/ic_favorite_border_black_24dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/full_screen_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/ic_fullscreen_24dp" />
+
+        <ImageButton
+            android:id="@+id/edit_image_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_edit_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/more_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_menu_white_24dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/topic_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="top|center"/>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/num_topic_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:tag_gravity="center"
+            android:layout_gravity="bottom|center"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar_topic_view_page"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="top|center"
+            style="@style/update_progress_horizontal"/>
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/display_what"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:text="@string/display_all"
+            style="@style/NoIconRadioButton"
+            android:background="@drawable/rb_transition_all"/>
+
+        <RadioButton
+            android:text="@string/right_solution"
+            style="@style/NoIconRadioButton"
+            android:background="@drawable/rb_transition_right" />
+
+        <RadioButton
+            android:text="@string/error_solution"
+            style="@style/NoIconRadioButton"
+            android:background="@drawable/rb_transition_error" />
+
+        <RadioButton
+            android:text="@string/point"
+            style="@style/NoIconRadioButton"
+            android:background="@drawable/rb_transition_point" />
+
+        <RadioButton
+            android:text="@string/error_reason"
+            style="@style/NoIconRadioButton"
+            android:background="@drawable/rb_transition_reason" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

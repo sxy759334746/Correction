@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_title_size">20sp</dimen>
+    <dimen name="text_body_size">15sp</dimen>
+    <dimen name="layout_padding">8dp</dimen>
+    <dimen name="tag_tiny_text_size">12sp</dimen>
+    <dimen name="print_button_text_size">12sp</dimen>
+    <dimen name="topic_paper_text_size">14sp</dimen>
+    <dimen name="menu_text_size">14sp</dimen>
+    <dimen name="bar_height">56dp</dimen>
+    <dimen name="common_icon_height">24dp</dimen>
+    <dimen name="common_icon_width">24dp</dimen>
+    <dimen name="common_icon_size">24dp</dimen>
+    <dimen name="tiny_icon_size">18dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="touch_raise">8dp</dimen>
+    <dimen name="higher_component_height">48dp</dimen>
+
+</resources>

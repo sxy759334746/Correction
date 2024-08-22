@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Search_View">
+        <attr name="textSizeSearch" format="dimension"  />
+        <attr name="textColorSearch" format="color" />
+        <attr name="textHintSearch" format="string" />
+        <attr name="searchBlockHeight" format="integer" />
+        <attr name="searchBlockColor" format="color" />
+    </declare-styleable>
+
+    <string-array name="print_page">
+        <item>@string/stem</item>
+        <item>@string/right_solution</item>
+        <item>@string/error_solution</item>
+        <item>@string/point</item>
+        <item>@string/error_reason</item>
+    </string-array>
+
+    <string-array name="show_print">
+        <item>@string/right_solution</item>
+        <item>@string/error_solution</item>
+        <item>@string/point</item>
+        <item>@string/error_reason</item>
+    </string-array>
+
+    <string-array name="view_smear_method">
+        <item>@string/click_smear_by</item>
+        <item>@string/click_button_by</item>
+    </string-array>
+
+</resources>

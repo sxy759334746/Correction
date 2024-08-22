@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="24dp"
+    android:gravity="center"
+    android:minWidth="40dp"
+    android:button="@null"
+    android:textSize="@dimen/tag_tiny_text_size"
+    android:textColor="@color/white"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/topic_radio_button_unchecked"
+    android:text="更多"/>

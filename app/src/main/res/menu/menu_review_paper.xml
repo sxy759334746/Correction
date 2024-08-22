@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/review_paper_print"
+        app:showAsAction="ifRoom"
+        android:title="@string/print"
+        android:actionLayout="@layout/menu_review_paper_sign">
+
+    </item>
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/review_paper_regroup_menu"
+        android:title="@string/regroup_paper"
+        >
+
+    </item>
+</menu>

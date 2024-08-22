@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:icon="@drawable/ic_print_icon"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="@string/print"
+        android:textSize="@dimen/menu_text_size"
+        android:drawablePadding="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+</LinearLayout>

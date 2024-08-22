@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contrast_ratio_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:gravity="center|start"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/contrast_weak_ratio_btn"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:text="@string/weak"
+                    android:textColor="@color/gray_9c"
+                    android:textSize="@dimen/print_button_text_size"
+                    android:drawableTop="@drawable/ic_paint_contrast_weak_ratio_unchecked" />
+
+
+                <Button
+                    android:id="@+id/contrast_common_ratio_btn"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:text="@string/common"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/print_button_text_size"
+                    android:drawableTop="@drawable/ic_paint_contrast_common_ratio_checked" />
+
+
+                <Button
+                    android:id="@+id/contrast_strong_ratio_btn"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:text="@string/strong"
+                    android:textColor="@color/gray_9c"
+                    android:textSize="@dimen/print_button_text_size"
+                    android:drawableTop="@drawable/ic_paint_contrast_strong_ratio_unchecked" />
+
+        </LinearLayout>
+
+
+</HorizontalScrollView>

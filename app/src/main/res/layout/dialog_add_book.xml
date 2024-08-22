@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/coverImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginVertical="8dp"
+                    android:src="@drawable/correction_book"
+                    android:background="@drawable/drawing_view_shape"
+                    android:layout_gravity="center"
+                    android:layout_alignParentTop="true"/>
+
+                <ImageButton
+                    android:id="@+id/alter_cover_image"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="16dp"
+                    android:layout_alignEnd="@+id/coverImg"
+                    android:layout_alignBottom="@+id/coverImg"
+                    android:background="@color/gray_f2"
+                    android:src="@drawable/ic_album"/>
+
+                <ImageButton
+                    android:id="@+id/delete_book_cover"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignTop="@+id/coverImg"
+                    android:layout_alignEnd="@+id/coverImg"
+                    android:background="@drawable/delete_book"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/bookNameEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/coverImg"
+                    android:layout_marginVertical="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:hint="@string/correction_name_hint"
+                    android:textSize="@dimen/text_title_size"
+                    android:maxLength="10"/>
+
+                <TextView
+                    android:id="@+id/bookNameEdtNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:layout_marginTop="-8dp"
+                    android:layout_below="@+id/bookNameEdt"
+                    android:gravity="end|center"
+                    android:hint="0/10"
+                    android:textSize="12dp"/>
+
+        </RelativeLayout>
+
+</LinearLayout>

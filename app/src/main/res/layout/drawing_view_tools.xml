@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:scrollbars="none"
+    android:gravity="center|start"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|start">
+
+            <TextView
+                android:id="@+id/edit_photo_undo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/ic_paint_undo_no"
+                android:text="@string/undo"
+                android:textColor="@color/gray_9c"
+                android:textSize="@dimen/print_button_text_size"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/edit_photo_redo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/ic_paint_redo_no"
+                android:text="@string/redo"
+                android:textColor="@color/gray_9c"
+                android:textSize="@dimen/print_button_text_size"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/edit_photo_contrast_ratio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/ic_paint_contrast_ratio_unchecked"
+                android:text="@string/contrast_ratio"
+                android:textColor="@color/gray_9c"
+                android:textSize="@dimen/print_button_text_size"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/edit_photo_erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/ic_paint_erase_unchecked"
+                android:text="@string/erase"
+                android:textColor="@color/gray_9c"
+                android:textSize="@dimen/print_button_text_size"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/edit_photo_white_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:text="@string/white_out"
+                android:textColor="@color/gray_9c"
+                android:textSize="@dimen/print_button_text_size"
+                android:drawableTop="@drawable/ic_paint_white_out_uncheck"
+                tools:ignore="ContentDescription"/>
+
+        </LinearLayout>
+
+</HorizontalScrollView>

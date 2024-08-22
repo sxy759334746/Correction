@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SetTagActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/add_tag_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="@string/set_tag"
+        android:elevation="4dp"
+        app:titleTextColor="@color/colorWhite"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/all_tag"
+        android:textSize="@dimen/text_body_size"
+        android:id="@+id/all_tag_text"
+        android:textColor="@color/gray_7d"
+
+        tools:ignore="RtlSymmetry" />
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tag_layout_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/all_tag_text"
+        android:background="@color/transparent"
+        />
+</RelativeLayout>

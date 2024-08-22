@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    tools:context="com.luckyxmobile.correction.ui.activity.EditPhotoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/drawing_view_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/edit_photo_return_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:drawableStart="@drawable/ic_arrow_back_24dp"
+                android:text="@string/last_step"
+                android:textStyle="bold"
+                android:textColor="@color/orange_f7"
+                android:textSize="@dimen/print_button_text_size"
+                tools:ignore="ContentDescription" />
+
+            <include
+                layout="@layout/drawing_view_tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="4dp"
+            android:background="@color/gray_9c"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:paddingStart="32dp"
+            android:paddingEnd="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/which_tools_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="top"
+                android:text="@string/width"
+                android:textColor="@color/orange_f7"
+                android:textSize="12sp"/>
+
+            <include
+                android:visibility="gone"
+                layout="@layout/drawing_view_contrast_ratio"
+                android:layout_gravity="center|end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <include
+                android:visibility="gone"
+                layout="@layout/drawing_view_erase"
+                android:layout_gravity="center|end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <include
+                android:visibility="visible"
+                layout="@layout/drawing_view_paint_width"
+                android:layout_gravity="center|end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/drawing_view_shape"
+        tools:ignore="NestedWeights">
+
+        <com.luckyxmobile.correction.ui.view.DrawingView
+            android:id="@+id/doodle_view_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"/>
+
+        <CheckBox
+            android:id="@+id/screen_rotation"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:button="@null"
+            android:background="@drawable/ic_screen_rotation_24dp"
+            android:checked="true"
+            android:visibility="gone"
+            android:layout_gravity="top|end"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/print_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawing_view_shape"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <include
+            layout="@layout/drawing_view_paints"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/doodle_btn_next"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_photo_paint_next"
+            android:src="@drawable/ic_check_white_24dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

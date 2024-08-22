@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:zhy="http://schemas.android.com/tools"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <!--使用Toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/menu_pop_window"
+        app:title="@string/paper_empty_cant_print"/>
+
+    <!--max_select——设置可选择标签的个数，如值为-1，则表示选择数量不限-->
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tags_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/higher_component_height"
+        android:padding="4dp"
+        android:background="@color/colorPrimary"
+        zhy:max_select="-1"/>
+
+    <ImageView
+        android:id="@+id/book_topic_nothing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:src="@mipmap/nothing"
+        android:background="@color/transparent"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_correction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@color/transparent" />
+
+</LinearLayout>

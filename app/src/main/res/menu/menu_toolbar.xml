@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/select_topic_random"
+        android:icon="@drawable/ic_random"
+        android:title="@string/random"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/select_topic_filter"
+        android:icon="@drawable/ic_filter_24dp"
+        android:title="@string/filter"
+        app:showAsAction="always" />
+</menu>

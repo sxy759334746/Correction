@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="8dp">
+
+    <Button
+        android:id="@+id/upload_topic_dialog_camera"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:gravity="start|center"
+        android:text="@string/choose_from_camera"
+        android:drawableStart="@drawable/ic_camera"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/ic_radio_button_uncheck_24dp"
+        android:background="@color/transparent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+
+    <Button
+        android:id="@+id/upload_topic_dialog_album"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:gravity="start|center"
+        android:text="@string/choose_from_album"
+        android:drawableStart="@drawable/ic_album"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/ic_radio_button_uncheck_24dp"
+        android:background="@color/transparent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+
+</LinearLayout>

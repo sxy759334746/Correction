@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_collection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/main_centre_background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/recent_topic_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:minHeight="100dp"
+            android:maxHeight="250dp"/>
+
+        <TextView
+            android:id="@+id/recent_topic_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center"
+            android:textColor="#909090"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="@string/correction_book"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

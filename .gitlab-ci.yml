@@ -1,0 +1,17 @@
+before_script:  
+ - export ANDROID_HOME="/home/luckyxmobile/Android/Sdk"
+ - chmod a+x ./gradlew
+
+stages:
+    - build
+    - test
+
+BUILD:
+   stage: build
+   script:
+     - ./gradlew app:assembleDebug --stacktrace
+
+TEST:
+   stage: test
+   script:
+     - ./gradlew app:test --stacktrace
